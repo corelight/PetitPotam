@@ -3,3 +3,5 @@
 
 # VIM backup files
 *~
+.DS_Store
+.tmp
