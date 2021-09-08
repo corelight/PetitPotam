@@ -1,0 +1,5 @@
+# Zeek output files
+*.log
+
+# VIM backup files
+*~
