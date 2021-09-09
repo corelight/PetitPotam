@@ -1,0 +1,3 @@
+# @TEST-DOC: PatchedDCUnauthenticatedTry
+# @TEST-EXEC: zeek -Cr $TRACES/PatchedDCUnauthenticatedTry.pcapng $PACKAGE %INPUT
+# @TEST-EXEC: btest-diff notice.log
