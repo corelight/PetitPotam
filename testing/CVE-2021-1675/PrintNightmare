@@ -1,3 +1,0 @@
-# @TEST-DOC: PrintNightmare
-# @TEST-EXEC: zeek -Cr $TRACES/PrintNightmare.pcap $PACKAGE %INPUT
-# @TEST-EXEC: btest-diff notice.log
