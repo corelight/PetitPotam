@@ -38,7 +38,7 @@ event dce_rpc_response_stub(c: connection, fid: count, ctx_id: count,
 
         # An error code of 0x00000035 (ERROR_BAD_NETPATH) indicates that the exploit worked
         #   https://github.com/topotam/PetitPotam/blob/main/PetitPotam.py#L381
-        if ( ends_with(stub, "\x35\x00\x00\x00") )
+        if ( /\x35\x00\x00\x00$/ in stub )
             {
             exploit_status = "Successful";
             }
